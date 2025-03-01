@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    @import url('https://fonts.google.com/specimen/Figtree');
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box ;
+  }
+
+    .container {
+      display: grid;
+      place-content: center;
+      align-content:center;
+      align-content: center;
+      background: hsl(0, 0%, 100%);
+     margin: 50px;
+     text-align: left;
+     border-radius: 15px;
+     padding: 20px;
+     box-shadow: 8px 8px 0 black;
+     
+    }
+
+
+
+     .image {
+      width: 100%;
+      padding: 0;
+      border-radius: 15px;
+      margin-bottom: 20px;
+     }
+
+     .button {
+      padding: 7px;
+      background: hsl(47, 88%, 63%);
+      width: 24%;
+      margin-left: 0;
+      border-radius: 7px;
+      font-family: 'Figtree', sans-serif;
+      font-weight: 800;
+      font-size: 10px;
+      text-align: center;
+      margin-bottom: 15px;
+      font-weight: 800;
+      font-size: 12px;
+      color: hsl(0, 0%, 7%);
+     }
+
+     .publishdate {
+      font-size: 14px;
+      font-weight: 500;
+      font-family: 'Figtree', sans-serif;
+      margin-bottom: 20px;
+     }
+
+     .heading {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 800;
+      font-size: 23px;
+      margin-bottom: 25px;
+      color:  hsl(0, 0%, 7%);
+      cursor: pointer;
+      transition: .5s;
+     }
+
+     .heading:hover {
+      color: hsl(47, 88%, 63%);
+      
+     }
+    
+     .paragraph {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: hsl(0, 0%, 42%);
+      margin-bottom: 20px;
+      line-height: 25px;
+     }
+
+     .wrapper {
+      background: hsl(47, 88%, 63%);
+
+      display: grid;
+      place-items: center;
+     }
+
+     .container2 {
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+      font-family: 'Figtree', sans-serif;
+      font-weight: 800;
+      font-size: 14px;
+      color: hsl(0, 0%, 7%);
+     }
+
+     @media (min-width: 320px) and (max-width: 375px){
+      .container {
+        background: hsl(0, 0%, 100%);
+        
+      }
+
+      .button {
+        width: 20%;
+        font-size: 7px;
+        padding: 4px;
+        margin-bottom: 7px;
+
+      }
+
+      .image {margin-bottom: 8px;}
+
+      .publishdate {
+        font-size: 10px;
+        margin-bottom: 7px;
+      }
+
+      .heading {
+        margin-bottom: 7px;
+        font-size:13px
+      }
+
+      .paragraph {
+        font-size: 9px;
+        line-height: 13px;
+      }
+
+      
+     }
+    
+  </style>
+</head>
+<body>
+
+  Learning
+
+  Published 21 Dec 2023
+
+  HTML & CSS foundations
+
+  These languages are the backbone of every website, defining structure, content, and presentation.
+
+  Greg Hooper
+  
+  <header>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Paul Kioko</a>.
+  </div>
+  </header>
+  <main class="wrapper">
+    <div class="container">
+      <img class="image" src="assets/images/illustration-article.svg"/> 
+      <p class="button">
+        Learning
+      </p>
+      <p class="publishdate">Published 21 dec 2023</p>
+      
+      <h1 class="heading">HTML & CSS foundations</h1>
+      <p class="paragraph">These languages are the backbone of every<br>website, defining structure, content, and<br> presentation.</p>
+      <div class="container2">
+        <img class="profileimg" src="assets/images/image-avatar.webp">
+        <p class="profilename">Greg Hooper</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
